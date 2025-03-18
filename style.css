@@ -29,12 +29,23 @@ header p {
     font-size: 1rem;
 }
 
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 section {
     margin-top: 30px;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -78,8 +89,15 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .skills div {
         flex: 1 1 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
